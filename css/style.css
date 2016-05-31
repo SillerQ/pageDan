@@ -1,0 +1,505 @@
+@font-face {
+ font-family: "montserratbold";
+ src:url(../fonts/montserratbold.ttf) format(TureType);
+}
+.hr_10{height: 10px;}
+.hr_20{height: 20px;}
+.hr_40{height: 40px;}
+
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+body{
+	width:100%;
+}
+.flex-control-paging li a {
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #f08529;
+    text-indent: -9999px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -o-border-radius: 18px;
+    border-radius: 18px;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #f08529;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -o-border-radius: 18px;
+    border-radius: 18px;
+}
+
+
+.carousel-indicators li:hover {
+	background: #f08529;
+	border-color: #fff;
+}
+
+.carousel-indicators li.active {
+	width: 18px;
+    height: 18px;
+	background: #f08529;
+	border-color: #fff;
+	cursor: default;
+}
+
+.navBg{background: url("../images/broth.jpg") left no-repeat;}
+.container{
+	width: 100%;
+}
+
+.containerHeader{
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	background:rgba(255, 255, 255, 0.8) none repeat !important;
+	filter:Alpha(opacity=80); background:#fff;/*实现IE背景透明*/
+}
+.containerHeaderS{
+	width: 100%;
+	text-align: center;
+	background-color:#fef8f1;
+}
+.containerNav{
+	width: 100%;
+	padding-top: 10px;
+}
+.navBtnbg{
+	background: url(../images/menu.svg) top no-repeat;
+	cursor: pointer;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    right: 18px;
+    z-index: 99;
+}
+.ulNav{
+	width: 1024px;
+	margin:10px auto;
+}
+.navbar-nav{float: none;}
+.ulNav > li{
+	width: 20%;
+	float: left;
+}
+.ulNav li a{
+	color:#c69c6d;
+	width: 100%;
+	font:20px/34px "montserratbold";
+}
+.ulNav li a.action{
+	color: #54534A;
+	background-color: transparent;
+}
+.ulNav > li > a:hover,
+.ulNav > li > a:focus{
+	color: #F15E38;
+	background-color: transparent;
+}
+.dropMH li {
+    border-bottom: 1px solid #FFBF56;
+
+}
+.dropMH > li.last{
+    border-bottom: 0;
+
+}
+
+.dropMH li a {
+    display: block;
+    height: 60px;
+    padding: 19px 10px;
+    font: 18px "montserratbold";
+    font-weight: bold;
+    background-color: #f08529;
+    color: #fff;
+    position: relative;
+}
+
+.dropMH{padding: 0;top: 120%;}
+.San{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border:10px solid transparent;
+	border-bottom-color: #f08529;
+	position: absolute;
+	left: 30%;
+	bottom: 100%;
+	margin-left: -16px;
+}
+.logo{
+	width: 270px;
+	margin:0 auto;
+}
+.logoScroll{
+	position: relative;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 2px 5px #C0C0C0;
+    background: url(../images/woodgrain_header_bp1.jpg) no-repeat center;
+    background-size: auto 100%;
+    margin: 0;
+    height: 120px;
+}
+
+.logoScroll .logoT{text-align: left;width: 176px;margin: 10px 0 0 160px;}
+.logoScroll .logoC{margin: 40px 160px 0 0;}
+.logo .logoImg{
+	width: 270px;
+	height: auto;
+	position:relative;
+}
+.item{height: 750px;}
+.carousel-inner > .item > a > img{
+	width: auto;
+	height: 100%;
+	max-width: 1920px;
+}
+.imgCarousel{height: 750px;z-index: 2;}
+.carousel-caption{
+	position: absolute;
+	bottom: 62px;
+	left: 15%;
+	background: #fff;
+	width: 460px;
+	text-align: left;
+	padding: 10px 30px 20px 30px;
+	background:rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	filter:Alpha(opacity=80); background:#fff;/*实现IE背景透明*/
+}
+.carousel-caption .Tit,
+.content .Tit,
+.fres .Tit,
+.featured .Tit,
+.share .Tit{
+	text-align: left;
+	font:42px/42px "HVDBodedo";
+	padding-bottom: 20px;
+	border-bottom: 1px solid #F15E38;
+}
+.carousel-caption .Tit,
+.content .Tit{color: #f15e3b;}
+
+.carousel-caption p{
+	font: 18px/30px "OpenSans-Regular"; 
+	color: #54534A;
+	text-align: left;
+}
+.carousel-caption .carBtn,
+.content .carBtn{
+	font:bold 18px/46px "OpenSans-Regular";
+	color: #f08529;
+	border:1px solid #f08529;
+	background-color: transparent;
+	border-radius: 4px;
+	margin: 24px 0;
+	padding: 0 10px;
+	z-index: 999;
+	transition: background-color 0.4s linear;
+	transition: color 0.4s linear;
+}
+.carousel-caption .carBtn:hover,
+.content .carBtn:hover{
+	background-color: #f08529;
+	color: #fff;	
+}
+.content{
+	position: relative;
+	text-align: center;
+	background-image: url('..images/commitment_great_ingredients') no-repeat;
+}
+.content .Tit,
+.fres .Tit,
+.featured .Tit,
+.share .Tit,
+.share p{
+	border:0;
+	text-align: center;
+	padding: 20px 0;
+}
+.content p{
+	width: 100%;
+	margin: 0 auto;
+	font: 18px/30px "OpenSans-Regular"; 
+	color: #54534A;
+}
+.content .img-box{
+	width: 100%;
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -99999;
+	overflow: hidden;
+	}
+.content .img-box img{
+	margin:0 auto;
+	width: 110%;
+	/*height: 480px;*/
+	margin-left: -4%;
+	/*margin-top: -5%;*/
+}
+.fres{
+	position: relative;
+	text-align: center;
+	background-color: #f08529;
+}
+.fres .Tit{color: #fff;}
+.fres .row{	width: 80%;
+			margin: 0 auto;
+		}
+.fres .row > div{cursor: pointer;}
+.fres h4{
+	font:16px/32px "montserratbold";
+	color: #fff;
+}
+.fres p{
+	width: 100%;
+	margin: 0 auto;
+	font: 18px/30px "OpenSans-Regular"; 
+	color: #54534A;
+}
+.content p,.fres p{
+		padding: 20px 25%;
+	}
+.fres img{padding:10px 0 40px 0;}
+.featured{
+	text-align: center;
+	background-color: #FEF8F1;
+}
+
+.featured .Tit{
+	color: #f15e3b;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.featured .row{
+	width: 70%;
+	margin:0 auto;
+}
+.featured .itemFeat{
+	width: 100%;
+	min-height: 304px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+}
+.itemFeat img{
+	width: 100%;
+	height: auto;
+	min-height: 220px;
+	cursor: pointer;
+}
+.itemFeat p{
+	background-color: #f08529;
+}
+.itemFeat a{
+	position: absolute;
+	bottom:0;
+	left: 0%;
+	/*margin-left: -50%;*/
+	padding: 20px 0;
+	background-color: #f08529;
+	color: #fff;
+	font:32px/32px "HVDBodedo";
+	width:100%;
+	text-align: center;
+	transition:background-color 0.2s linear;
+}
+.itemFeat a:hover{
+	background-color: #f15e3b;
+}
+.share{background-color: #ffbf56;}
+.share .row{
+	width: 26%;
+	margin:0 auto;
+}
+.share .Tit{
+	color: #54534A;
+}
+.share .row .Fb,
+.share .row .Pr{
+	text-align: center;
+	display: inline-block;
+	width: 48%;
+}
+.share p{
+	font-size: 26px;
+	line-height: 32px;
+	padding:30px 0 50px 0;
+		}
+.share h4{text-align: center; font:26px/48px "HVDBodedo";color: #54534A;padding: 20px 0;}		
+.foot .row{width:60%;margin:0 auto;}
+
+.foot h4{ text-align: center;line-height: 42px;margin-top: 40px; font-size: 16px; }
+.footlogo{
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    background: url("../images/logo_footer.svg") center no-repeat;
+}
+.foot p{line-height: 42px;margin-top: 40px; font-size: 16px;text-align: right;}
+.foot .foot-bot1 p{text-align: left;}
+.foot .foot-bot2 p{text-align: right;}
+.foot a{color: #f15e3b;display: inline-block;margin:0 auto;}
+.back{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    margin-right: 4px;
+    vertical-align: middle;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 4px dashed;
+}
+.come{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    vertical-align: middle;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px dashed;
+}
+@media screen and (max-width: 768px){
+	.containerHeader{padding-top:0;text-align: left;}
+	.logo{
+			padding: 10px 0 10px 20px;
+		    position: relative;
+		    width: 100%;
+		    z-index: 2;
+		    box-shadow: 0px 2px 5px #C0C0C0;
+		    background: url(../images/woodgrain_header_bp1.jpg) no-repeat center;
+		    background-size: auto 100%;
+		}
+	.logo .logoT{
+		    width: 84px;
+		    margin-right: 15px;
+			float: left;
+		}
+	.logo .logoC{width: 240px;text-align: left;float: left;margin-top: 10px;}
+	.ulNav{
+		width: 100%;
+	}
+	.dropdown{height: auto;}
+	.open{margin-top: -60px;}
+	.ulNav{height: 100%;overflow: hidden;}/*460*/
+	.ulNav > li{
+		width: 100%;
+		float: none;
+		border-bottom: 1px solid #FFBF56;
+	}
+	ul {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+	/*.dropdown-menu > li > a{padding-top: 40px;}*/
+	.navbar-nav .open .dropdown-menu > li > a{padding-top: 20px;}
+	/*.dropMH li a{width: 50%;}*/
+	.navbar-collapse{
+	}
+	.container > .navbar-collapse{
+		margin-left: 0;
+	}
+	.containerNav{
+		padding: 0;
+		/*margin-top: -15px;*/
+		/*margin-bottom: -15px;*/
+		overflow:hidden;}
+	.ulNav{
+		padding: 0;
+		margin-top:0;
+		margin-bottom: 0;
+	}
+
+	.ulNav > li > a {
+		display: block;
+	    height: 60px;
+	    padding: 19px 10px;
+	    font: 18px "montserratbold";
+	    font-weight: bold;
+	    background-color: #f08529;
+	    color: #fff;
+	}
+	.ulNav > li > a:hover {
+	    background-color: #f15e3b;
+	    color: #fff;
+	}
+	.item{height: 450px;}
+	.carousel-inner > .item > a > img{width: auto;height: 80%;}
+
+	.carousel-caption{
+		width: 100%;
+		bottom: -220px;
+		left: 0;
+		text-align: center;
+		padding-bottom: 0;
+		background-color: #fef8f1;
+	}
+	.dropMH li a {text-align: right;}
+	.imgCarousel{z-index: 6;}
+	.carousel-caption .Tit,.carousel-caption p{text-align: center;}
+	.carousel-indicators{
+		top:300px;
+		height: 200px;
+	}
+	.content p,.fres p{
+		padding: 20px 5%;
+	}
+	.featured .row{
+		width: 90%;
+		margin:0 auto;
+	}
+
+	.itemFeat a{
+		font:22px/32px "HVDBodedo";
+		
+	}
+	.share .Tit{
+		font:32px/32px "HVDBodedo";
+		padding-bottom: 12px;
+		/*border-bottom: 1px solid #F15E38;*/
+	}
+	.share h4{text-align: center; font:22px/32px "HVDBodedo";color: #54534A;padding: 10px 0;}
+	.share .row{width: 80%;}
+	.foot .foot-bot1 p,.foot .foot-bot2 p{text-align: center;}
+	.ulNav > li > a:hover, .ulNav > li > a:focus{background-color: #f15e3b;color: #fff;}
+	.foot h4{line-height: 22px;margin-top: 14px;font-size: 14px;}
+	.foot p{line-height: 20px;margin-top: 14px; font-size: 14px;}
+}
+@media screen and (max-width: 528px){
+	.fres h4{font-size: 14px;}
+	.fres .row{width: 100%;}
+	.fres img{
+		width: 100px;
+	}
+	.share .row{width: 80%;}
+	.carousel-caption .Tit{font-size: 32px;}
+	.carousel-caption {position: relative;top:0px;}
+}
+
+.ulNav .dropMH > li > a:hover,
+.ulNav .dropMH > li > a:focus{background-color: #f15e3b !important;color: #fff;}
+
+
+
+
